@@ -54,6 +54,7 @@ int main(int argc,char *argv[])
 		memset(argvector, 0, sizeof(argvector));
 		printf(BANNER);
 		gets(user_input);
+		
 		char *tmp = user_input;
 		int user_input_length = strlen(user_input);
 		if (user_input_length == 0)
