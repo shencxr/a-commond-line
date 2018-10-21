@@ -248,7 +248,7 @@ char * do_set(char *origin_str, int argcount_in, char(*argvector_in)[MAX_PER_ARG
 		{
 			//printf("aaa");
 			int delete_str_len = strlen(origin_str + m);
-			memcpy(return_str, origin_str + m, m);
+			memcpy(return_str, origin_str , m);
 			memcpy(return_str + m, (origin_str + m + delete_str_len) + 1, (length - m - delete_str_len));
 			length = length - delete_str_len-1;
 			free(origin_str);
